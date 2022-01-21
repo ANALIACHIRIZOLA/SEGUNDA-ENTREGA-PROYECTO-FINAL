@@ -1,0 +1,636 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.grilla{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1px 3fr 1px 3fr;
+    grid-template-rows: 20vh 6vh 4vh 62vh 6vh 58vh 20vh;
+    grid-template-areas:
+    "section1 logoTitulo logoTitulo logoTitulo section2"
+    "section1 logoTitulo logoTitulo logoTitulo section2"
+    "nav nav nav nav nav"
+    "imagenes imagenes imagenes imagenes imagenes"
+    "subtitulo subtitulo subtitulo subtitulo subtitulo"
+    "section3 . section4 . section5"
+    "footer footer footer footer footer"
+    ;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+}
+
+.grillaF{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1px 3fr 1px 3fr;
+    grid-template-rows: 22vh 8vh 4vh 56vh 17vh;
+    grid-template-areas:
+    "section1 logoTitulo logoTitulo logoTitulo section2"
+    "section1 logoTitulo logoTitulo logoTitulo section2"
+    "nav nav nav nav nav"
+    "contacto contacto contacto contacto contacto"
+    "footer footer footer footer footer"
+    ;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+}
+
+.grillaA{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1px 3fr 1px 3fr;
+    grid-template-rows: 22vh 8vh 4vh 90vh 17vh;
+    grid-template-areas:
+    "section1 logoTitulo logoTitulo logoTitulo section2"
+    "section1 logoTitulo logoTitulo logoTitulo section2"
+    "nav nav nav nav nav"
+    "aromas aromas aromas aromas aromas"
+    "footer footer footer footer footer"
+    ;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+}
+
+.grillaS{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1px 3fr 1px 3fr;
+    grid-template-rows: 20vh 10vh 8vh 450vh 20vh;
+    grid-template-areas:
+    "section1 logoTitulo logoTitulo logoTitulo section2"
+    "section1 logoTitulo logoTitulo logoTitulo section2"
+    "nav nav nav nav nav"
+    "sectionS sectionS sectionS sectionS sectionS"
+    "footer footer footer footer footer"
+    ;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+}
+
+.grillaB{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1px 3fr 1px 3fr;
+    grid-template-rows: 20vh 10vh 8vh 250vh 20vh;
+    grid-template-areas:
+    "section1 logoTitulo logoTitulo logoTitulo section2"
+    "section1 logoTitulo logoTitulo logoTitulo section2"
+    "nav nav nav nav nav"
+    "sectionS sectionS sectionS sectionS sectionS"
+    "footer footer footer footer footer"
+    ;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+}
+
+.grillaP{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1px 3fr 1px 3fr;
+    grid-template-rows: 20vh 10vh 8vh 300vh 20vh;
+    grid-template-areas:
+    "section1 logoTitulo logoTitulo logoTitulo section2"
+    "section1 logoTitulo logoTitulo logoTitulo section2"
+    "nav nav nav nav nav"
+    "sectionS sectionS sectionS sectionS sectionS"
+    "footer footer footer footer footer"
+    ;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+}
+
+
+
+.imagenProducto{
+    width: 100%;
+    margin: 3%;
+
+}
+
+.imagenes2{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 3%;
+    background-image: linear-gradient(rgb(170, 232, 240), rgb(204, 225, 233));
+}
+.detalleProducto{
+    width: 110%;
+    font-size: 65%;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 260px;
+    text-align: center;
+    padding: 2%;
+    
+}
+.texto{
+    margin: 5%;
+    margin-left: 0%;
+    font-size: 60%;
+    text-align: center;
+    font-style: italic;
+}
+
+.parrafoAromas{
+    grid-area: aromas;
+    margin: 10%;
+    text-align: justify;
+}
+h1{
+    font-size: 55%;
+    margin-left: 0;
+    text-decoration: underline;
+    margin: 1%;
+    color: mediumslateblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.sectionS{
+    grid-area: sectionS;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+}
+
+.mainContacto{
+    grid-area: contacto;
+}
+.formularioenviar{
+     margin: 3%;
+     font-size: 70%;
+     padding: 1%;
+     color: slateblue;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.imagenP{
+    border-radius: 5%;
+}
+.formulario{
+    padding: 2%;
+    height: 20%; 
+    font-size: 70%;
+    color: rgb(126, 113, 212);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    background-color: rgb(247, 226, 246);
+    border-color: lightyellow;
+    border-radius: 3%;
+}
+.formularioConsulta{
+     padding: 2%;
+     height: 40%; 
+     font-size: 70%;
+     color: slateblue;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     width: 100%;
+     background-color: rgb(247, 226, 246);
+     border-color: lightyellow;
+     border-radius: 3%;
+}
+
+.formularioContacto{
+    display: flex;
+    flex-direction: column;
+    margin: 15%;
+    align-items: center;
+}
+.parrafo{
+    color: rgb(116, 194, 224);
+    font-size: 80%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 2%;
+    text-align: center;
+}
+
+.logoTitulo{
+    grid-area: logoTitulo;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: 5%;
+    margin:auto;
+    width: 20vh;
+}
+
+.nav{
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-content: center;
+}
+
+.section1{
+    grid-area: section1;
+    align-content: center;
+    justify-content: center;
+    padding: 5%;
+    margin-left: 5%;
+    transform: skewX(-10deg);
+    width: 35%;
+    height: 100%;
+}
+
+.section2{
+    grid-area: section2;
+    padding: 5% 5% 5% 30%;
+    width: 30%;
+    height: 100%;
+}
+
+.imagenes{
+    grid-area: imagenes;
+    background-color: rgb(253, 223, 238, 0.75);
+    padding: 3%;
+}
+
+.imagen2{
+    padding: 5%;
+    background-color: rgb(253, 223, 238, 0.75);
+    margin: 2%;
+    width: 16vh;
+}
+
+.piedras{
+    width: 70%;
+}
+
+.subtitulo{
+    grid-area: subtitulo;
+    background-color: rgba(99, 213, 228, 0.30);
+    margin:  2%;
+    font-size: 90%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: purple;
+    text-align: center;
+    padding: 2%
+}
+
+.section3{
+    grid-area: section3;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section4{
+    grid-area: section4;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section5{
+    grid-area: section5;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: #f8d7f0;
+    display: flex;
+    flex-direction: column;
+    align-items: initial;
+    background-image: linear-gradient(50deg, #fff2fd, #fcddf7);
+
+}
+
+.menu{
+    text-decoration: none;
+    font-size: 80%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #8112ad;
+    text-align: center;
+    width: 6%;
+    height: 2%;
+}
+
+
+.ulMenu{
+    display: flex;
+    flex-direction: row;
+    margin: 0%;
+    padding: 0%;
+}
+
+.submenu{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    font-size: 90%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #986D8E;   
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    position:relative;
+    font-size: 80%;
+    background-color:rgb(253, 223, 238);
+    margin: 2%;
+    padding: 1%;
+    text-align: center;
+    width: 14vh;
+}
+
+ul ul {
+    position: absolute;
+    display: none;  
+}
+
+ul ul li {
+    display: block;
+    margin-top: 5%;
+    margin-left: -3%;
+}
+
+ul li:hover ul {
+    display:block;
+}
+p{
+    color: #80386f ;
+    font-size: 70%;
+    margin:0%
+}
+h2{
+    color: #80386f ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 72%;
+    margin-bottom: 5%;
+
+}
+
+.pie{
+    text-decoration: none;
+    color: #a07baf;
+    font-size: 70%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 2%;
+}
+
+.pieFoto2{
+    color: #80386f;
+    font-size: 55%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    height: 16vw;
+}
+.titulo{
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.subtitulo{
+    color: #80386f ;
+    font-size: 90%;
+    margin:0%
+}
+
+div{
+    align-items: center;
+}
+.carousel-inner{
+    display: block;
+    align-items: center;
+}
+.carousel{
+    padding: 0%;
+    margin:0%
+}
+
+   /* Estilos tablet */
+@media (min-width: 768px){
+    
+.grilla{
+    grid-template-columns: 3fr 1px 3fr 1px 3fr;
+    grid-template-rows: 40vh 10vh 15vh 120vh 18vh 10vh 22vh;
+ }
+
+.grillaF{
+    grid-template-rows: 40vh 10vh 6vh 85vh 18vh;
+}
+
+.grillaA{
+    grid-template-rows: 40vh 10vh 4vh 140vh 17vh;
+  
+}
+
+.grillaS{
+    grid-template-rows: 40vh 10vh 8vh 700vh 26vh;
+}
+
+.grillaB{
+    grid-template-rows: 40vh 10vh 8vh 400vh 26vh;
+}
+
+.grillaP{
+    grid-template-rows: 40vh 10vh 8vh 470vh 26vh;
+}
+
+
+h2{
+    font-size: 90%;
+    margin-top: 10%;
+    font-style: normal;
+}
+
+h1{
+    font-size: 80%;
+    margin-left: 0;
+}
+
+.formularioConsulta{
+    width: 70%;
+}
+.formulario{
+    width: 70%;
+
+}
+.section1{
+    margin-left: 5%;
+    width: 65%;
+    height: 70%;
+}
+    
+.section2{
+    width: 85%;
+    height: 70%;
+    padding: 5% 5% 5% 10%;
+}
+
+.nav{
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.imagenes{
+    width: 80%;
+}
+
+.menu{
+    font-size: 100%;
+    width: 15%;
+    height: 10%;
+}
+
+
+li {
+    font-size: 100%;
+    width: 16vh;
+    padding: 2%;
+}
+
+ul ul li {
+    margin-top: 10%;
+    margin-left: -6%;
+}
+
+p{
+    font-size: 100%;
+}
+.pie{
+    font-size: 85%;
+    margin: 0.7%;
+}
+
+.pieFoto2{
+    font-size: 80%;
+    height: 6vw;
+    width: 100%;
+}
+.titulo{
+    margin-top: 5%;
+    margin-bottom: 10%;
+    width: 120%;
+}
+
+.subtitulo{
+    font-size: 100%;
+}
+.imagen2{
+    background-color: rgb(253, 223, 238, 0.75);
+    width: 90%;
+    height: 40vw;
+    margin: 8%;
+}
+img{
+    width: 100%;
+}
+.piedras{
+    width: 70%;
+}
+
+.logoTitulo{
+    margin-top: 1%;
+    width: 40vh;
+}
+.logo1{
+    width: 120%;
+    height: 170%;
+}
+.logo2{
+    width: 120%;
+    height: 150%;
+}
+
+
+.detalleProducto{
+
+    font-size: 78%;
+
+}
+.texto{
+
+    font-size: 80%;
+}
+}
+
+
+/* Estilos desktop */
+@media(min-width: 1024px){
+
+.grilla{
+    grid-template-rows: 40vh 10vh 15vh 120vh 18vh 110vh 22vh;
+}
+.pie{
+    font-size: 100%;
+    margin: 1%;
+}
+    
+.pieFoto2{
+    font-size: 100%;
+}
+
+.imagen2{
+    height: 35vw;
+    margin: 6%;
+}
+
+.section1{
+    margin-left: 8%;
+    width: 65%;
+    height: 70%;
+}
+        
+.section2{
+    width: 85%;
+    height: 70%;
+    padding: 5% 5% 5% 10%;
+}
+
+.formularioenviar{
+    font-size: 80%;
+ 
+}
+.formulario{
+   font-size: 80%;
+}
+.formularioConsulta{
+    font-size: 80%;
+}
+
+.parrafo{
+   font-size: 90%;
+
+}
+
+h2{
+    font-size: 110%;
+}
+
+h1{
+    font-size: 100%;
+}
+
+.grillaA{
+    grid-template-rows: 40vh 10vh 4vh 110vh 17vh;
+  
+}
+
+.detalleProducto{
+
+    font-size: 105%;
+
+}
+.texto{
+
+    font-size: 115%;
+}
+}
