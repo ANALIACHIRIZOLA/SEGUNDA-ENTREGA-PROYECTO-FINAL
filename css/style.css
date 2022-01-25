@@ -1,0 +1,1160 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }
+
+.grilla {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3fr 1px 3fr 1px 3fr;
+  grid-template-rows: 20vh 6vh 4vh 56vh 8vh 58vh 20vh;
+  grid-template-areas: "section1 logoTitulo logoTitulo logoTitulo section2" "section1 logoTitulo logoTitulo logoTitulo section2" "nav nav nav nav nav" "imagenes imagenes imagenes imagenes imagenes" "subtitulo subtitulo subtitulo subtitulo subtitulo" "section3 . section4 . section5" "footer footer footer footer footer";
+  grid-column-gap: 0;
+  grid-row-gap: 0; }
+  .grilla .header .logoTitulo {
+    grid-area: logoTitulo;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: 5%;
+    margin: auto;
+    width: 20vh; }
+    .grilla .header .logoTitulo .titulo {
+      margin-top: 10%;
+      margin-bottom: 5%; }
+    .grilla .header .logoTitulo .piedras {
+      width: 70%; }
+  .grilla .section1 {
+    grid-area: section1;
+    align-content: center;
+    justify-content: center;
+    padding: 5%;
+    margin-left: 5%;
+    transform: skewX(-10deg);
+    width: 35%;
+    height: 100%; }
+  .grilla .section2 {
+    grid-area: section2;
+    padding: 5% 5% 5% 30%;
+    width: 30%;
+    height: 100%; }
+  .grilla .nav {
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-content: center; }
+    .grilla .nav .ulMenu {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      margin: 0%;
+      padding: 0%; }
+    .grilla .nav ul li:hover ul {
+      display: block; }
+    .grilla .nav li {
+      display: inline-block;
+      position: relative;
+      font-size: 80%;
+      background-color: #fddfee;
+      margin: 2%;
+      padding: 1%;
+      text-align: center;
+      width: 14vh; }
+    .grilla .nav .menu {
+      text-decoration: none;
+      font-size: 80%;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      color: #8112ad;
+      text-align: center;
+      width: 6%;
+      height: 2%; }
+    .grilla .nav ul ul {
+      position: absolute;
+      display: none; }
+    .grilla .nav ul ul li {
+      display: block;
+      margin-top: 5%;
+      margin-left: -3%; }
+    .grilla .nav .submenu {
+      display: flex;
+      flex-direction: row;
+      text-decoration: none;
+      font-size: 90%;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      color: #a07baf; }
+  .grilla .imagenes {
+    grid-area: imagenes;
+    background-color: #fddfee;
+    padding: 5%;
+    width: 90%;
+    height: 90%;
+    margin: 5%; }
+    .grilla .imagenes .carousel {
+      padding: 0%;
+      margin: 0%;
+      height: 80%; }
+      .grilla .imagenes .carousel .carousel-inner {
+        display: block;
+        align-items: center; }
+        .grilla .imagenes .carousel .carousel-inner img {
+          width: 90%; }
+        .grilla .imagenes .carousel .carousel-inner .pieFotoCarousel {
+          font-size: 80%;
+          color: #8112ad; }
+  .grilla .subtitulo {
+    grid-area: subtitulo;
+    background-color: #61d4e4;
+    margin: 2%;
+    font-size: 90%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 2%;
+    height: 70%;
+    color: purple; }
+    .grilla .subtitulo .psubtitulo {
+      color: #8112ad;
+      font-size: 90%;
+      margin: 0%; }
+  .grilla .section3 {
+    grid-area: section3;
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    .grilla .section3 .imagen2 {
+      padding: 5%;
+      background-color: #fddfee;
+      margin: 2%;
+      width: 16vh; }
+      .grilla .section3 .imagen2 .pieFoto2 {
+        color: purple;
+        font-size: 55%;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        text-align: center;
+        text-decoration: none;
+        height: 16vw; }
+  .grilla .section4 {
+    grid-area: section4;
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    .grilla .section4 .imagen2 {
+      padding: 5%;
+      background-color: #fddfee;
+      margin: 2%;
+      width: 16vh; }
+      .grilla .section4 .imagen2 .pieFoto2 {
+        color: purple;
+        font-size: 55%;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        text-align: center;
+        text-decoration: none;
+        height: 16vw; }
+  .grilla .section5 {
+    grid-area: section5;
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    .grilla .section5 .imagen2 {
+      padding: 5%;
+      background-color: #fddfee;
+      margin: 2%;
+      width: 16vh; }
+      .grilla .section5 .imagen2 .pieFoto2 {
+        color: purple;
+        font-size: 55%;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        text-align: center;
+        text-decoration: none;
+        height: 16vw; }
+  .grilla .footer {
+    grid-area: footer;
+    background-color: #f8d7f0;
+    display: flex;
+    flex-direction: column;
+    align-items: initial;
+    background-image: linear-gradient(50deg, #fff2fd, #fcddf7); }
+    .grilla .footer .pie {
+      text-decoration: none;
+      color: #8112ad;
+      font-size: 70%;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      margin: 2%; }
+
+.grillaS {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3fr 1px 3fr 1px 3fr;
+  grid-template-rows: 20vh 10vh 8vh 470vh 20vh;
+  grid-template-areas: "section1 logoTitulo logoTitulo logoTitulo section2" "section1 logoTitulo logoTitulo logoTitulo section2" "nav nav nav nav nav" "sectionS sectionS sectionS sectionS sectionS" "footer footer footer footer footer";
+  grid-column-gap: 0;
+  grid-row-gap: 0; }
+  .grillaS .header .logoTitulo {
+    grid-area: logoTitulo;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: 5%;
+    margin: auto;
+    width: 20vh; }
+    .grillaS .header .logoTitulo .titulo {
+      margin-top: 10%;
+      margin-bottom: 5%; }
+    .grillaS .header .logoTitulo .piedras {
+      width: 70%; }
+  .grillaS .section1 {
+    grid-area: section1;
+    align-content: center;
+    justify-content: center;
+    padding: 5%;
+    margin-left: 5%;
+    transform: skewX(-10deg);
+    width: 35%;
+    height: 100%; }
+  .grillaS .section2 {
+    grid-area: section2;
+    padding: 5% 5% 5% 30%;
+    width: 30%;
+    height: 100%; }
+  .grillaS .nav {
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-content: center; }
+    .grillaS .nav .ulMenu {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      margin: 0%;
+      padding: 0%; }
+    .grillaS .nav ul li:hover ul {
+      display: block; }
+    .grillaS .nav li {
+      display: inline-block;
+      position: relative;
+      font-size: 80%;
+      background-color: #fddfee;
+      margin: 2%;
+      padding: 1%;
+      text-align: center;
+      width: 14vh; }
+    .grillaS .nav .menu {
+      text-decoration: none;
+      font-size: 80%;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      color: purple;
+      text-align: center;
+      width: 6%;
+      height: 2%; }
+    .grillaS .nav ul ul {
+      position: absolute;
+      display: none; }
+    .grillaS .nav ul ul li {
+      display: block;
+      margin-top: 5%;
+      margin-left: -3%; }
+    .grillaS .nav .submenu {
+      display: flex;
+      flex-direction: row;
+      text-decoration: none;
+      font-size: 90%;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      color: #8112ad; }
+  .grillaS .footer {
+    grid-area: footer;
+    background-color: #f8d7f0;
+    display: flex;
+    flex-direction: column;
+    align-items: initial;
+    background-image: linear-gradient(50deg, #fff2fd, #fcddf7); }
+    .grillaS .footer .pie {
+      text-decoration: none;
+      color: #8112ad;
+      font-size: 70%;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      margin: 2%; }
+  .grillaS .sectionS {
+    grid-area: sectionS;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center; }
+    .grillaS .sectionS .imagenes2 {
+      display: flex;
+      flex-direction: row;
+      width: 90%;
+      margin: 3%;
+      background-image: linear-gradient(#61d4e4, #cce1e9); }
+      .grillaS .sectionS .imagenes2 .imagenProducto {
+        width: 100%;
+        margin: 3%; }
+        .grillaS .sectionS .imagenes2 .imagenProducto .texto {
+          margin: 5%;
+          margin-left: 0%;
+          font-size: 60%;
+          text-align: center;
+          font-style: italic; }
+        .grillaS .sectionS .imagenes2 .imagenProducto .imagenP {
+          border-radius: 5%; }
+      .grillaS .sectionS .imagenes2 .detalleProducto {
+        width: 110%;
+        font-size: 65%;
+        font-family: Arial, Helvetica, sans-serif;
+        height: 260px;
+        text-align: center;
+        padding: 2%; }
+
+.grillaB {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3fr 1px 3fr 1px 3fr;
+  grid-template-rows: 20vh 10vh 8vh 210vh 20vh;
+  grid-template-areas: "section1 logoTitulo logoTitulo logoTitulo section2" "section1 logoTitulo logoTitulo logoTitulo section2" "nav nav nav nav nav" "sectionS sectionS sectionS sectionS sectionS" "footer footer footer footer footer";
+  grid-column-gap: 0;
+  grid-row-gap: 0; }
+  .grillaB .header .logoTitulo {
+    grid-area: logoTitulo;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: 5%;
+    margin: auto;
+    width: 20vh; }
+    .grillaB .header .logoTitulo .titulo {
+      margin-top: 10%;
+      margin-bottom: 5%; }
+    .grillaB .header .logoTitulo .piedras {
+      width: 70%; }
+  .grillaB .section1 {
+    grid-area: section1;
+    align-content: center;
+    justify-content: center;
+    padding: 5%;
+    margin-left: 5%;
+    transform: skewX(-10deg);
+    width: 35%;
+    height: 100%; }
+  .grillaB .section2 {
+    grid-area: section2;
+    padding: 5% 5% 5% 30%;
+    width: 30%;
+    height: 100%; }
+  .grillaB .nav {
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-content: center; }
+    .grillaB .nav .ulMenu {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      margin: 0%;
+      padding: 0%; }
+    .grillaB .nav ul li:hover ul {
+      display: block; }
+    .grillaB .nav li {
+      display: inline-block;
+      position: relative;
+      font-size: 80%;
+      background-color: #fddfee;
+      margin: 2%;
+      padding: 1%;
+      text-align: center;
+      width: 14vh; }
+    .grillaB .nav .menu {
+      text-decoration: none;
+      font-size: 80%;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      color: purple;
+      text-align: center;
+      width: 6%;
+      height: 2%; }
+    .grillaB .nav ul ul {
+      position: absolute;
+      display: none; }
+    .grillaB .nav ul ul li {
+      display: block;
+      margin-top: 5%;
+      margin-left: -3%; }
+    .grillaB .nav .submenu {
+      display: flex;
+      flex-direction: row;
+      text-decoration: none;
+      font-size: 90%;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      color: #8112ad; }
+  .grillaB .sectionS {
+    grid-area: sectionS;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center; }
+    .grillaB .sectionS .imagenes2 {
+      display: flex;
+      flex-direction: row;
+      width: 90%;
+      margin: 3%;
+      background-image: linear-gradient(#61d4e4, #cce1e9); }
+      .grillaB .sectionS .imagenes2 .imagenProducto {
+        width: 100%;
+        margin: 3%; }
+        .grillaB .sectionS .imagenes2 .imagenProducto .texto {
+          margin: 5%;
+          margin-left: 0%;
+          font-size: 60%;
+          text-align: center;
+          font-style: italic; }
+        .grillaB .sectionS .imagenes2 .imagenProducto .imagenP {
+          border-radius: 5%; }
+      .grillaB .sectionS .imagenes2 .detalleProducto {
+        width: 110%;
+        font-size: 65%;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        height: 200px;
+        text-align: center;
+        padding: 2%; }
+  .grillaB .footer {
+    grid-area: footer;
+    background-color: #f8d7f0;
+    display: flex;
+    flex-direction: column;
+    align-items: initial;
+    background-image: linear-gradient(50deg, #fff2fd, #fcddf7); }
+    .grillaB .footer .pie {
+      text-decoration: none;
+      color: #8112ad;
+      font-size: 70%;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      margin: 2%; }
+
+.grillaP {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3fr 1px 3fr 1px 3fr;
+  grid-template-rows: 20vh 10vh 8vh 250vh 20vh;
+  grid-template-areas: "section1 logoTitulo logoTitulo logoTitulo section2" "section1 logoTitulo logoTitulo logoTitulo section2" "nav nav nav nav nav" "sectionS sectionS sectionS sectionS sectionS" "footer footer footer footer footer";
+  grid-column-gap: 0;
+  grid-row-gap: 0; }
+  .grillaP .header .logoTitulo {
+    grid-area: logoTitulo;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: 5%;
+    margin: auto;
+    width: 20vh; }
+    .grillaP .header .logoTitulo .titulo {
+      margin-top: 10%;
+      margin-bottom: 5%; }
+    .grillaP .header .logoTitulo .piedras {
+      width: 70%; }
+  .grillaP .section1 {
+    grid-area: section1;
+    align-content: center;
+    justify-content: center;
+    padding: 5%;
+    margin-left: 5%;
+    transform: skewX(-10deg);
+    width: 35%;
+    height: 100%; }
+  .grillaP .section2 {
+    grid-area: section2;
+    padding: 5% 5% 5% 30%;
+    width: 30%;
+    height: 100%; }
+  .grillaP .nav {
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-content: center; }
+    .grillaP .nav .ulMenu {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      margin: 0%;
+      padding: 0%; }
+    .grillaP .nav ul li:hover ul {
+      display: block; }
+    .grillaP .nav li {
+      display: inline-block;
+      position: relative;
+      font-size: 80%;
+      background-color: #fddfee;
+      margin: 2%;
+      padding: 1%;
+      text-align: center;
+      width: 14vh; }
+    .grillaP .nav .menu {
+      text-decoration: none;
+      font-size: 80%;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      color: purple;
+      text-align: center;
+      width: 6%;
+      height: 2%; }
+    .grillaP .nav ul ul {
+      position: absolute;
+      display: none; }
+    .grillaP .nav ul ul li {
+      display: block;
+      margin-top: 5%;
+      margin-left: -3%; }
+    .grillaP .nav .submenu {
+      display: flex;
+      flex-direction: row;
+      text-decoration: none;
+      font-size: 90%;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      color: #8112ad; }
+  .grillaP .sectionS {
+    grid-area: sectionS;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center; }
+    .grillaP .sectionS .imagenes2 {
+      display: flex;
+      flex-direction: row;
+      width: 90%;
+      margin: 3%;
+      background-image: linear-gradient(#61d4e4, #cce1e9); }
+      .grillaP .sectionS .imagenes2 .imagenProducto {
+        width: 100%;
+        margin: 3%; }
+        .grillaP .sectionS .imagenes2 .imagenProducto .texto {
+          margin: 5%;
+          margin-left: 0%;
+          font-size: 60%;
+          text-align: center;
+          font-style: italic; }
+        .grillaP .sectionS .imagenes2 .imagenProducto .imagenP {
+          border-radius: 5%; }
+      .grillaP .sectionS .imagenes2 .detalleProducto {
+        width: 110%;
+        font-size: 65%;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        height: 200px;
+        text-align: center;
+        padding: 2%; }
+  .grillaP .footer {
+    grid-area: footer;
+    background-color: #fddfee;
+    display: flex;
+    flex-direction: column;
+    align-items: initial;
+    background-image: linear-gradient(50deg, #fff2fd, #fcddf7); }
+    .grillaP .footer .pie {
+      text-decoration: none;
+      color: #8112ad;
+      font-size: 70%;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      margin: 2%; }
+
+/* Estilos tablet */
+@media (min-width: 768px) {
+  .grilla {
+    grid-template-columns: 3fr 1px 3fr 1px 3fr;
+    grid-template-rows: 40vh 10vh 15vh 120vh 18vh 10vh 22vh; }
+    .grilla .section1 {
+      margin-left: 5%;
+      width: 65%;
+      height: 70%; }
+      .grilla .section1 .logo1 {
+        width: 120%;
+        height: 170%; }
+    .grilla .section2 {
+      width: 85%;
+      height: 70%;
+      padding: 5% 5% 5% 10%; }
+      .grilla .section2 .logo2 {
+        width: 120%;
+        height: 150%; }
+    .grilla .logoTitulo {
+      margin-top: 1%;
+      width: 40vh; }
+      .grilla .logoTitulo .piedras {
+        width: 70%; }
+      .grilla .logoTitulo .titulo {
+        margin-top: 5%;
+        margin-bottom: 10%;
+        width: 120%; }
+    .grilla .nav {
+      grid-area: nav;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%; }
+      .grilla .nav .menu {
+        font-size: 100%;
+        width: 15%;
+        height: 10%; }
+      .grilla .nav li {
+        font-size: 100%;
+        width: 16vh;
+        padding: 2%; }
+      .grilla .nav ul ul li {
+        margin-top: 10%;
+        margin-left: -6%; }
+    .grilla .subtitulo {
+      font-size: 100%; }
+    .grilla .imagen2 {
+      background-color: #fddfee;
+      width: 90%;
+      height: 40vw;
+      margin: 8%; }
+      .grilla .imagen2 .pieFoto2 {
+        font-size: 80%;
+        height: 6vw;
+        width: 100%; }
+    .grilla .footer .pie {
+      font-size: 85%;
+      margin: 0.7%; }
+  .grillaS {
+    grid-template-rows: 40vh 10vh 8vh 700vh 26vh; }
+    .grillaS .detalleProducto {
+      font-size: 78%; }
+    .grillaS .texto {
+      font-size: 80%; }
+    .grillaS .section1 {
+      margin-left: 5%;
+      width: 65%;
+      height: 70%; }
+      .grillaS .section1 .logo1 {
+        width: 120%;
+        height: 170%; }
+    .grillaS .section2 {
+      width: 85%;
+      height: 70%;
+      padding: 5% 5% 5% 10%; }
+      .grillaS .section2 .logo2 {
+        width: 120%;
+        height: 150%; }
+    .grillaS .logoTitulo {
+      margin-top: 1%;
+      width: 40vh; }
+      .grillaS .logoTitulo .piedras {
+        width: 70%; }
+      .grillaS .logoTitulo .titulo {
+        margin-top: 5%;
+        margin-bottom: 10%;
+        width: 120%; }
+    .grillaS .nav {
+      grid-area: nav;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%; }
+      .grillaS .nav .menu {
+        font-size: 100%;
+        width: 15%;
+        height: 10%; }
+      .grillaS .nav li {
+        font-size: 100%;
+        width: 16vh;
+        padding: 2%; }
+      .grillaS .nav ul ul li {
+        margin-top: 10%;
+        margin-left: -6%; }
+    .grillaS .footer .pie {
+      font-size: 85%;
+      margin: 0.7%; }
+  .grillaB {
+    grid-template-rows: 40vh 10vh 8vh 400vh 26vh; }
+    .grillaB .section1 {
+      margin-left: 5%;
+      width: 65%;
+      height: 70%; }
+      .grillaB .section1 .logo1 {
+        width: 120%;
+        height: 170%; }
+    .grillaB .section2 {
+      width: 85%;
+      height: 70%;
+      padding: 5% 5% 5% 10%; }
+      .grillaB .section2 .logo2 {
+        width: 120%;
+        height: 150%; }
+    .grillaB .logoTitulo {
+      margin-top: 1%;
+      width: 40vh; }
+      .grillaB .logoTitulo .piedras {
+        width: 70%; }
+      .grillaB .logoTitulo .titulo {
+        margin-top: 5%;
+        margin-bottom: 10%;
+        width: 120%; }
+    .grillaB .nav {
+      grid-area: nav;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%; }
+      .grillaB .nav .menu {
+        font-size: 100%;
+        width: 15%;
+        height: 10%; }
+      .grillaB .nav li {
+        font-size: 100%;
+        width: 16vh;
+        padding: 2%; }
+      .grillaB .nav ul ul li {
+        margin-top: 10%;
+        margin-left: -6%; }
+    .grillaB .footer .pie {
+      font-size: 85%;
+      margin: 0.7%; }
+  .grillaP {
+    grid-template-rows: 40vh 10vh 8vh 470vh 26vh; }
+    .grillaP .section1 {
+      margin-left: 5%;
+      width: 65%;
+      height: 70%; }
+      .grillaP .section1 .logo1 {
+        width: 120%;
+        height: 170%; }
+    .grillaP .section2 {
+      width: 85%;
+      height: 70%;
+      padding: 5% 5% 5% 10%; }
+      .grillaP .section2 .logo2 {
+        width: 120%;
+        height: 150%; }
+    .grillaP .logoTitulo {
+      margin-top: 1%;
+      width: 40vh; }
+      .grillaP .logoTitulo .piedras {
+        width: 70%; }
+      .grillaP .logoTitulo .titulo {
+        margin-top: 5%;
+        margin-bottom: 10%;
+        width: 120%; }
+    .grillaP .nav {
+      grid-area: nav;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%; }
+      .grillaP .nav .menu {
+        font-size: 100%;
+        width: 15%;
+        height: 10%; }
+      .grillaP .nav li {
+        font-size: 100%;
+        width: 16vh;
+        padding: 2%; }
+      .grillaP .nav ul ul li {
+        margin-top: 10%;
+        margin-left: -6%; }
+    .grillaP .footer .pie {
+      font-size: 85%;
+      margin: 0.7%; } }
+
+/* Estilos desktop */
+@media (min-width: 1024px) {
+  .grilla {
+    -template-rows: 40vh 10vh 15vh 120vh 18vh 110vh 22vh; }
+    .grilla .section1 {
+      margin-left: 8%;
+      width: 65%;
+      height: 70%; }
+    .grilla .section2 {
+      width: 85%;
+      height: 70%;
+      padding: 5% 5% 5% 10%; }
+    .grilla .imagen2 {
+      height: 35vw;
+      margin: 6%; }
+      .grilla .imagen2 .pieFoto2 {
+        font-size: 100%; }
+    .grilla .imagenProducto .texto {
+      font-size: 115%; }
+    .grilla .detalleProducto {
+      font-size: 105%; }
+    .grilla .footer .pie {
+      font-size: 100%;
+      margin: 1%; } }
+
+.grillaF {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3fr 1px 3fr 1px 3fr;
+  grid-template-rows: 22vh 8vh 6vh 56vh 17vh;
+  grid-template-areas: "section1 logoTitulo logoTitulo logoTitulo section2" "section1 logoTitulo logoTitulo logoTitulo section2" "nav nav nav nav nav" "contacto contacto contacto contacto contacto" "footer footer footer footer footer";
+  grid-column-gap: 0;
+  grid-row-gap: 0; }
+  .grillaF .header .logoTitulo {
+    grid-area: logoTitulo;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: 5%;
+    margin: auto;
+    width: 20vh; }
+    .grillaF .header .logoTitulo .titulo {
+      margin-top: 10%;
+      margin-bottom: 5%; }
+    .grillaF .header .logoTitulo .piedras {
+      width: 70%; }
+  .grillaF .section1 {
+    grid-area: section1;
+    align-content: center;
+    justify-content: center;
+    padding: 5%;
+    margin-left: 5%;
+    transform: skewX(-10deg);
+    width: 35%;
+    height: 100%; }
+  .grillaF .section2 {
+    grid-area: section2;
+    padding: 5% 5% 5% 30%;
+    width: 30%;
+    height: 100%; }
+  .grillaF .nav {
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-content: center; }
+    .grillaF .nav .ulMenu {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      margin: 0%;
+      padding: 0%; }
+    .grillaF .nav ul li:hover ul {
+      display: block; }
+    .grillaF .nav li {
+      display: inline-block;
+      position: relative;
+      font-size: 80%;
+      background-color: #fddfee;
+      margin: 2%;
+      padding: 1%;
+      text-align: center;
+      width: 14vh; }
+    .grillaF .nav .menu {
+      text-decoration: none;
+      font-size: 80%;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      color: purple;
+      text-align: center;
+      width: 6%;
+      height: 2%; }
+    .grillaF .nav ul ul {
+      position: absolute;
+      display: none; }
+    .grillaF .nav ul ul li {
+      display: block;
+      margin-top: 5%;
+      margin-left: -3%; }
+    .grillaF .nav .submenu {
+      display: flex;
+      flex-direction: row;
+      text-decoration: none;
+      font-size: 90%;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      color: #8112ad; }
+  .grillaF .mainContacto {
+    grid-area: contacto; }
+    .grillaF .mainContacto .formularioContacto {
+      display: flex;
+      flex-direction: column;
+      margin: 15%;
+      align-items: center; }
+      .grillaF .mainContacto .formularioContacto .parrafo {
+        color: #74c2e0;
+        font-size: 80%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 2%;
+        text-align: center; }
+      .grillaF .mainContacto .formularioContacto .formulario {
+        padding: 2%;
+        height: 20%;
+        font-size: 70%;
+        color: #7e71d4;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 100%;
+        background-color: #f7e2f6;
+        border-color: lightyellow;
+        border-radius: 3%; }
+      .grillaF .mainContacto .formularioContacto .formularioConsulta {
+        padding: 2%;
+        height: 40%;
+        font-size: 70%;
+        color: slateblue;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 100%;
+        background-color: #f7e2f6;
+        border-color: lightyellow;
+        border-radius: 3%; }
+      .grillaF .mainContacto .formularioContacto .formularioenviar {
+        margin: 3%;
+        font-size: 70%;
+        padding: 1%;
+        color: slateblue;
+        font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  .grillaF .footer {
+    grid-area: footer;
+    background-color: #f8d7f0;
+    display: flex;
+    flex-direction: column;
+    align-items: initial;
+    background-image: linear-gradient(50deg, #f8d7f0, #fcddf7); }
+    .grillaF .footer .pie {
+      text-decoration: none;
+      color: #8112ad;
+      font-size: 70%;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      margin: 2%; }
+
+/* Estilos tablet */
+@media (min-width: 768px) {
+  .grillaF {
+    grid-template-rows: 40vh 10vh 6vh 85vh 18vh; }
+    .grillaF .formularioConsulta {
+      width: 70%; }
+    .grillaF .formulario {
+      width: 70%; }
+    .grillaF .section1 {
+      margin-left: 5%;
+      width: 65%;
+      height: 70%; }
+      .grillaF .section1 .logo1 {
+        width: 120%;
+        height: 170%; }
+    .grillaF .section2 {
+      width: 85%;
+      height: 70%;
+      padding: 5% 5% 5% 10%; }
+      .grillaF .section2 .logo2 {
+        width: 120%;
+        height: 150%; }
+    .grillaF .logoTitulo {
+      margin-top: 1%;
+      width: 100%; }
+      .grillaF .logoTitulo .piedras {
+        width: 100%; }
+      .grillaF .logoTitulo .titulo {
+        margin-top: 5%;
+        margin-bottom: 10%;
+        width: 180%; }
+    .grillaF .nav {
+      grid-area: nav;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%; }
+      .grillaF .nav .menu {
+        font-size: 100%;
+        width: 15%;
+        height: 10%; }
+      .grillaF .nav li {
+        font-size: 100%;
+        width: 16vh;
+        padding: 2%; }
+      .grillaF .nav ul ul li {
+        margin-top: 10%;
+        margin-left: -6%; }
+    .grillaF .footer .pie {
+      font-size: 85%;
+      margin: 0.7%; } }
+
+/* Estilos desktop */
+@media (min-width: 1024px) {
+  .formularioenviar {
+    font-size: 80%; }
+  .formulario {
+    font-size: 80%; }
+  .formularioConsulta {
+    font-size: 80%; }
+  .parrafo {
+    font-size: 90%; } }
+
+.grillaA {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3fr 1px 3fr 1px 3fr;
+  grid-template-rows: 22vh 8vh 6vh 90vh 17vh;
+  grid-template-areas: "section1 logoTitulo logoTitulo logoTitulo section2" "section1 logoTitulo logoTitulo logoTitulo section2" "nav nav nav nav nav" "aromas aromas aromas aromas aromas" "footer footer footer footer footer";
+  grid-column-gap: 0;
+  grid-row-gap: 0; }
+  .grillaA .header .logoTitulo {
+    grid-area: logoTitulo;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: 5%;
+    margin: auto;
+    width: 20vh; }
+    .grillaA .header .logoTitulo .titulo {
+      margin-top: 10%;
+      margin-bottom: 5%; }
+    .grillaA .header .logoTitulo .piedras {
+      width: 70%; }
+  .grillaA .section1 {
+    grid-area: section1;
+    align-content: center;
+    justify-content: center;
+    padding: 5%;
+    margin-left: 5%;
+    transform: skewX(-10deg);
+    width: 35%;
+    height: 100%; }
+  .grillaA .section2 {
+    grid-area: section2;
+    padding: 5% 5% 5% 30%;
+    width: 30%;
+    height: 100%; }
+  .grillaA .nav {
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-content: center; }
+    .grillaA .nav .ulMenu {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      margin: 0%;
+      padding: 0%; }
+    .grillaA .nav ul li:hover ul {
+      display: block; }
+    .grillaA .nav li {
+      display: inline-block;
+      position: relative;
+      font-size: 80%;
+      background-color: #fddfee;
+      margin: 2%;
+      padding: 1%;
+      text-align: center;
+      width: 14vh; }
+    .grillaA .nav .menu {
+      text-decoration: none;
+      font-size: 80%;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      color: purple;
+      text-align: center;
+      width: 6%;
+      height: 2%; }
+    .grillaA .nav ul ul {
+      position: absolute;
+      display: none; }
+    .grillaA .nav ul ul li {
+      display: block;
+      margin-top: 5%;
+      margin-left: -3%; }
+    .grillaA .nav .submenu {
+      display: flex;
+      flex-direction: row;
+      text-decoration: none;
+      font-size: 90%;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      color: #8112ad; }
+  .grillaA .parrafoAromas {
+    grid-area: aromas;
+    margin: 10%;
+    text-align: justify; }
+    .grillaA .parrafoAromas p {
+      color: purple;
+      font-size: 70%;
+      margin: 0%; }
+    .grillaA .parrafoAromas h1 {
+      font-size: 55%;
+      margin-left: 0;
+      text-decoration: underline;
+      margin: 1%;
+      color: purple;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
+    .grillaA .parrafoAromas h2 {
+      color: purple;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      font-size: 72%;
+      margin-bottom: 5%; }
+  .grillaA .footer {
+    grid-area: footer;
+    background-color: #f8d7f0;
+    display: flex;
+    flex-direction: column;
+    align-items: initial;
+    background-image: linear-gradient(50deg, #fff2fd, #fcddf7); }
+    .grillaA .footer .pie {
+      text-decoration: none;
+      color: #a07baf;
+      font-size: 70%;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 2%; }
+
+/* Estilos tablet */
+@media (min-width: 768px) {
+  .grillaA {
+    grid-template-rows: 40vh 10vh 4vh 140vh 17vh; }
+    .grillaA .parrafoAromas h2 {
+      font-size: 90%;
+      margin-top: 10%;
+      font-style: normal; }
+    .grillaA .parrafoAromas h1 {
+      font-size: 80%;
+      margin-left: 0; }
+    .grillaA .parrafoAromas p {
+      font-size: 100%; }
+    .grillaA .section1 {
+      margin-left: 5%;
+      width: 65%;
+      height: 70%; }
+      .grillaA .section1 .logo1 {
+        width: 120%;
+        height: 170%; }
+    .grillaA .section2 {
+      width: 85%;
+      height: 70%;
+      padding: 5% 5% 5% 10%; }
+      .grillaA .section2 .logo2 {
+        width: 120%;
+        height: 150%; }
+    .grillaA .logoTitulo {
+      margin-top: 1%;
+      width: 40vh; }
+      .grillaA .logoTitulo .piedras {
+        width: 70%; }
+      .grillaA .logoTitulo .titulo {
+        margin-top: 5%;
+        margin-bottom: 10%;
+        width: 120%; }
+    .grillaA .nav {
+      grid-area: nav;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%; }
+      .grillaA .nav .menu {
+        font-size: 100%;
+        width: 15%;
+        height: 10%; }
+      .grillaA .nav li {
+        font-size: 100%;
+        width: 16vh;
+        padding: 2%; }
+      .grillaA .nav ul ul li {
+        margin-top: 10%;
+        margin-left: -6%; }
+    .grillaA .footer .pie {
+      font-size: 85%;
+      margin: 0.7%; } }
+
+/* Estilos desktop */
+@media (min-width: 1024px) {
+  .grillaA {
+    grid-template-rows: 40vh 10vh 4vh 110vh 17vh; }
+    .grillaA h2 {
+      font-size: 110%; }
+    .grillaA h1 {
+      font-size: 100%; } }

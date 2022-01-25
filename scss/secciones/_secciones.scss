@@ -1,0 +1,1010 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.grilla{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1px 3fr 1px 3fr;
+    grid-template-rows: 20vh 6vh 4vh 56vh 8vh 58vh 20vh;
+    grid-template-areas:
+    "section1 logoTitulo logoTitulo logoTitulo section2"
+    "section1 logoTitulo logoTitulo logoTitulo section2"
+    "nav nav nav nav nav"
+    "imagenes imagenes imagenes imagenes imagenes"
+    "subtitulo subtitulo subtitulo subtitulo subtitulo"
+    "section3 . section4 . section5"
+    "footer footer footer footer footer"
+    ;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    .header{
+        .logoTitulo{
+            grid-area: logoTitulo;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            margin-top: 5%;
+            margin:auto;
+            width: 20vh;
+            .titulo{
+                margin-top: 10%;
+                margin-bottom: 5%;
+            }
+            .piedras{
+                width: 70%;
+            }
+        }
+    }
+    .section1{
+        grid-area: section1;
+        align-content: center;
+        justify-content: center;
+        padding: 5%;
+        margin-left: 5%;
+        transform: skewX(-10deg);
+        width: 35%;
+        height: 100%;
+    }
+    .section2{
+        grid-area: section2;
+        padding: 5% 5% 5% 30%;
+        width: 30%;
+        height: 100%;
+    }
+    .nav{
+        grid-area: nav;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-content: center;
+        .ulMenu{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            margin: 0%;
+            padding: 0%;
+        }
+        ul li:hover ul {
+            display:block; 
+        } 
+        li {
+            display: inline-block;
+            position:relative;
+            font-size: 80%;
+            background-color: $rosa;
+            margin: 2%;
+            padding: 1%;
+            text-align: center;
+            width: 14vh;
+        }
+        .menu{
+            text-decoration: none;
+            font-size: 80%;
+            font-family: $menu;
+            color: $violeta;
+            text-align: center;
+            width: 6%;
+            height: 2%;
+        }
+        ul ul {
+            position: absolute;
+            display: none;
+        }    
+        ul ul li {
+            display: block;
+            margin-top: 5%;
+            margin-left: -3%;
+        }
+        .submenu{
+            display: flex;
+            flex-direction: row;
+            text-decoration: none;
+            font-size: 90%;
+            font-family: $menu;
+            color: $lila;   
+        }
+    }
+    .imagenes{
+        grid-area: imagenes;
+        background-color: $rosa;
+        padding: 5%;
+        width: 90%;
+        height: 90%;
+        margin: 5%;
+        .carousel{
+            padding: 0%;
+            margin:0%;
+            height: 80%;
+            .carousel-inner{
+                display: block;
+                align-items: center;
+                img{
+                    width: 90%;
+                }
+                .pieFotoCarousel{
+                    font-size: 80%;
+                    color:$violeta;
+                }
+            }
+        }
+    }
+    .subtitulo{
+        grid-area: subtitulo;
+        background-color: $turquesa;
+        margin:  2%;
+        font-size: 90%;
+        font-family: $subtitulo;
+        text-align: center;
+        padding: 2%;
+        height: 70%;
+        color: $violetaOscuro;
+        .psubtitulo{
+            color: $violeta;
+            font-size: 90%;
+            margin:0%
+        }
+    }
+    .section3{
+        grid-area: section3;
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+        .imagen2{
+            padding: 5%;
+            background-color: $rosa;
+            margin: 2%;
+            width: 16vh;
+            .pieFoto2{
+                color: $violetaOscuro;
+                font-size: 55%;
+                font-family: $pieFoto;
+                text-align: center;
+                text-decoration: none;
+                height: 16vw;
+            }
+        }
+    }
+    .section4{
+        grid-area: section4;
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+        .imagen2{
+            padding: 5%;
+            background-color:$rosa;
+            margin: 2%;
+            width: 16vh;
+            .pieFoto2{
+                color: $violetaOscuro;
+                font-size: 55%;
+                font-family: $pieFoto;
+                text-align: center;
+                text-decoration: none;
+                height: 16vw;
+            }
+        }
+    }  
+    .section5{
+        grid-area: section5;
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+        .imagen2{
+            padding: 5%;
+            background-color: $rosa;
+            margin: 2%;
+            width: 16vh;
+            .pieFoto2{
+                color: $violetaOscuro;
+                font-size: 55%;
+                font-family: $pieFoto;
+                text-align: center;
+                text-decoration: none;
+                height: 16vw;
+            }
+        }
+    }
+    .footer{
+        grid-area: footer;
+        background-color: $rosaClaro;
+        display: flex;
+        flex-direction: column;
+        align-items: initial;
+        background-image: linear-gradient(50deg, #fff2fd, #fcddf7);
+        .pie{
+            text-decoration: none;
+            color: $violeta;
+            font-size: 70%;
+            font-family: $menu;
+            margin: 2%;
+        }
+    
+    }
+}
+.grillaS{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1px 3fr 1px 3fr;
+    grid-template-rows: 20vh 10vh 8vh 470vh 20vh;
+    grid-template-areas:
+    "section1 logoTitulo logoTitulo logoTitulo section2"
+    "section1 logoTitulo logoTitulo logoTitulo section2"
+    "nav nav nav nav nav"
+    "sectionS sectionS sectionS sectionS sectionS"
+    "footer footer footer footer footer"
+    ;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    .header{
+        .logoTitulo{
+            grid-area: logoTitulo;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            margin-top: 5%;
+            margin:auto;
+            width: 20vh;
+            .titulo{
+                margin-top: 10%;
+                margin-bottom: 5%;
+            }
+            .piedras{
+                width: 70%;
+            }
+        }
+    }
+    .section1{
+        grid-area: section1;
+        align-content: center;
+        justify-content: center;
+        padding: 5%;
+        margin-left: 5%;
+        transform: skewX(-10deg);
+        width: 35%;
+        height: 100%;
+    }
+    .section2{
+        grid-area: section2;
+        padding: 5% 5% 5% 30%;
+        width: 30%;
+        height: 100%;
+    }
+    .nav{
+        grid-area: nav;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-content: center;
+        .ulMenu{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            margin: 0%;
+            padding: 0%;
+        }
+        ul li:hover ul {
+            display:block; 
+        } 
+        li {
+            display: inline-block;
+            position:relative;
+            font-size: 80%;
+            background-color:$rosa;
+            margin: 2%;
+            padding: 1%;
+            text-align: center;
+            width: 14vh;
+        }
+        .menu{
+            text-decoration: none;
+            font-size: 80%;
+            font-family: $menu;
+            color: $violetaOscuro;
+            text-align: center;
+            width: 6%;
+            height: 2%;
+        }
+        ul ul {
+            position: absolute;
+            display: none;
+        }    
+        ul ul li {
+            display: block;
+            margin-top: 5%;
+            margin-left: -3%;
+        }
+        .submenu{
+            display: flex;
+            flex-direction: row;
+            text-decoration: none;
+            font-size: 90%;
+            font-family: $menu;
+            color: $violeta;   
+        }
+    }
+    .footer{
+        grid-area: footer;
+        background-color: $rosaClaro;
+        display: flex;
+        flex-direction: column;
+        align-items: initial;
+        background-image: linear-gradient(50deg, #fff2fd, #fcddf7);
+        .pie{
+            text-decoration: none;
+            color: $violeta;
+            font-size: 70%;
+            font-family: $menu;
+            margin: 2%;
+        }
+    }
+    .sectionS{
+        grid-area: sectionS;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        .imagenes2{
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            margin: 3%;
+            background-image: linear-gradient($turquesa, rgb(204, 225, 233));
+            .imagenProducto{
+                width: 100%;
+                margin: 3%;
+                .texto{
+                    margin: 5%;
+                    margin-left: 0%;
+                    font-size: 60%;
+                    text-align: center;
+                    font-style: italic;
+                }
+                .imagenP{
+                    border-radius: 5%;
+                }
+    
+            }
+            .detalleProducto{
+                width: 110%;
+                font-size: 65%;
+                font-family: Arial, Helvetica, sans-serif;
+                height: 260px;
+                text-align: center;
+                padding: 2%;  
+            }
+        }
+    
+    }
+}
+.grillaB{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1px 3fr 1px 3fr;
+    grid-template-rows: 20vh 10vh 8vh 210vh 20vh;
+    grid-template-areas:
+    "section1 logoTitulo logoTitulo logoTitulo section2"
+    "section1 logoTitulo logoTitulo logoTitulo section2"
+    "nav nav nav nav nav"
+    "sectionS sectionS sectionS sectionS sectionS"
+    "footer footer footer footer footer"
+    ;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    .header{
+        .logoTitulo{
+            grid-area: logoTitulo;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            margin-top: 5%;
+            margin:auto;
+            width: 20vh;
+            .titulo{
+                margin-top: 10%;
+                margin-bottom: 5%;
+            }
+            .piedras{
+                width: 70%;
+            }
+        }
+    }
+    .section1{
+        grid-area: section1;
+        align-content: center;
+        justify-content: center;
+        padding: 5%;
+        margin-left: 5%;
+        transform: skewX(-10deg);
+        width: 35%;
+        height: 100%;
+    }
+    .section2{
+        grid-area: section2;
+        padding: 5% 5% 5% 30%;
+        width: 30%;
+        height: 100%;
+    }
+    .nav{
+        grid-area: nav;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-content: center;
+        .ulMenu{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            margin: 0%;
+            padding: 0%;
+        }
+        ul li:hover ul {
+            display:block; 
+        } 
+        li {
+            display: inline-block;
+            position:relative;
+            font-size: 80%;
+            background-color: $rosa;
+            margin: 2%;
+            padding: 1%;
+            text-align: center;
+            width: 14vh;
+        }
+        .menu{
+            text-decoration: none;
+            font-size: 80%;
+            font-family: $menu;
+            color: $violetaOscuro;
+            text-align: center;
+            width: 6%;
+            height: 2%;
+        }
+        ul ul {
+            position: absolute;
+            display: none;
+        }    
+        ul ul li {
+            display: block;
+            margin-top: 5%;
+            margin-left: -3%;
+        }
+        .submenu{
+            display: flex;
+            flex-direction: row;
+            text-decoration: none;
+            font-size: 90%;
+            font-family: $menu;
+            color: $violeta;   
+        }
+    }
+    .sectionS{
+        grid-area: sectionS;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        .imagenes2{
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            margin: 3%;
+            background-image: linear-gradient($turquesa, rgb(204, 225, 233));
+            .imagenProducto{
+                width: 100%;
+                margin: 3%;
+                .texto{
+                    margin: 5%;
+                    margin-left: 0%;
+                    font-size: 60%;
+                    text-align: center;
+                    font-style: italic;
+                }
+                .imagenP{
+                    border-radius: 5%;
+                }
+    
+            }
+            .detalleProducto{
+                width: 110%;
+                font-size: 65%;
+                font-family: $pieFoto;
+                height: 200px;
+                text-align: center;
+                padding: 2%;  
+            }
+        }
+    
+    }
+    .footer{
+        grid-area: footer;
+        background-color: $rosaClaro;
+        display: flex;
+        flex-direction: column;
+        align-items: initial;
+        background-image: linear-gradient(50deg, #fff2fd, #fcddf7);
+        .pie{
+            text-decoration: none;
+            color: $violeta;
+            font-size: 70%;
+            font-family: $menu;
+            margin: 2%;
+        }
+    }
+}
+.grillaP{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1px 3fr 1px 3fr;
+    grid-template-rows: 20vh 10vh 8vh 250vh 20vh;
+    grid-template-areas:
+    "section1 logoTitulo logoTitulo logoTitulo section2"
+    "section1 logoTitulo logoTitulo logoTitulo section2"
+    "nav nav nav nav nav"
+    "sectionS sectionS sectionS sectionS sectionS"
+    "footer footer footer footer footer"
+    ;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    .header{
+        .logoTitulo{
+            grid-area: logoTitulo;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            margin-top: 5%;
+            margin:auto;
+            width: 20vh;
+            .titulo{
+                margin-top: 10%;
+                margin-bottom: 5%;
+            }
+            .piedras{
+                width: 70%;
+            }
+        }
+    }
+    .section1{
+        grid-area: section1;
+        align-content: center;
+        justify-content: center;
+        padding: 5%;
+        margin-left: 5%;
+        transform: skewX(-10deg);
+        width: 35%;
+        height: 100%;
+    }
+    .section2{
+        grid-area: section2;
+        padding: 5% 5% 5% 30%;
+        width: 30%;
+        height: 100%;
+    }
+    .nav{
+        grid-area: nav;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-content: center;
+        .ulMenu{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            margin: 0%;
+            padding: 0%;
+        }
+        ul li:hover ul {
+            display:block; 
+        } 
+        li {
+            display: inline-block;
+            position:relative;
+            font-size: 80%;
+            background-color:$rosa;
+            margin: 2%;
+            padding: 1%;
+            text-align: center;
+            width: 14vh;
+        }
+        .menu{
+            text-decoration: none;
+            font-size: 80%;
+            font-family: $menu;
+            color: $violetaOscuro;
+            text-align: center;
+            width: 6%;
+            height: 2%;
+        }
+        ul ul {
+            position: absolute;
+            display: none;
+        }    
+        ul ul li {
+            display: block;
+            margin-top: 5%;
+            margin-left: -3%;
+        }
+        .submenu{
+            display: flex;
+            flex-direction: row;
+            text-decoration: none;
+            font-size: 90%;
+            font-family: $menu;
+            color: $violeta;   
+        }
+    }
+    .sectionS{
+        grid-area: sectionS;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        .imagenes2{
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            margin: 3%;
+            background-image: linear-gradient($turquesa, rgb(204, 225, 233));
+            .imagenProducto{
+                width: 100%;
+                margin: 3%;
+                .texto{
+                    margin: 5%;
+                    margin-left: 0%;
+                    font-size: 60%;
+                    text-align: center;
+                    font-style: italic;
+                }
+                .imagenP{
+                    border-radius: 5%;
+                }
+    
+            }
+            .detalleProducto{
+                width: 110%;
+                font-size: 65%;
+                font-family: $pieFoto;
+                height: 200px;
+                text-align: center;
+                padding: 2%;  
+            }
+        }
+    
+    }
+    .footer{
+        grid-area: footer;
+        background-color: $rosa;
+        display: flex;
+        flex-direction: column;
+        align-items: initial;
+        background-image: linear-gradient(50deg, #fff2fd, #fcddf7);
+        .pie{
+            text-decoration: none;
+            color: $violeta;
+            font-size: 70%;
+            font-family: $menu;
+            margin: 2%;
+        }
+    }
+}
+
+   /* Estilos tablet */
+@media (min-width: 768px){
+
+.grilla{
+    grid-template-columns: 3fr 1px 3fr 1px 3fr;
+    grid-template-rows: 40vh 10vh 15vh 120vh 18vh 10vh 22vh;
+    .section1{
+        margin-left: 5%;
+        width: 65%;
+        height: 70%;
+        .logo1{
+            width: 120%;
+            height: 170%;
+        }
+    }  
+    .section2{
+        width: 85%;
+        height: 70%;
+        padding: 5% 5% 5% 10%;
+        .logo2{
+            width: 120%;
+            height: 150%;
+        }
+    }
+
+    .logoTitulo{
+        margin-top: 1%;
+        width: 40vh;
+        .piedras{
+            width: 70%;
+        }
+        .titulo{
+            margin-top: 5%;
+            margin-bottom: 10%;
+            width: 120%;
+        }
+    }
+    .nav{
+        grid-area: nav;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        .menu{
+            font-size: 100%;
+            width: 15%;
+            height: 10%;
+        }
+        li {
+            font-size: 100%;
+            width: 16vh;
+            padding: 2%;
+        }
+        
+        ul ul li {
+            margin-top: 10%;
+            margin-left: -6%;
+        }
+        
+    }
+    .subtitulo{
+        font-size: 100%;
+    }
+    .imagen2{
+        background-color: rgb(253, 223, 238);
+        width: 90%;
+        height: 40vw;
+        margin: 8%;
+        .pieFoto2{
+            font-size: 80%;
+            height: 6vw;
+            width: 100%;
+        }
+    }
+    .footer{
+        .pie{
+            font-size: 85%;
+            margin: 0.7%;
+        }
+    }
+ }
+.grillaS{
+    grid-template-rows: 40vh 10vh 8vh 700vh 26vh;
+    .detalleProducto{
+        font-size: 78%;
+    }
+    .texto{
+        font-size: 80%;
+    }
+    .section1{
+        margin-left: 5%;
+        width: 65%;
+        height: 70%;
+        .logo1{
+            width: 120%;
+            height: 170%;
+        }
+    }  
+    .section2{
+        width: 85%;
+        height: 70%;
+        padding: 5% 5% 5% 10%;
+        .logo2{
+            width: 120%;
+            height: 150%;
+        }
+    }
+
+    .logoTitulo{
+        margin-top: 1%;
+        width: 40vh;
+        .piedras{
+            width: 70%;
+        }
+        .titulo{
+            margin-top: 5%;
+            margin-bottom: 10%;
+            width: 120%;
+        }
+    }
+    .nav{
+        grid-area: nav;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        .menu{
+            font-size: 100%;
+            width: 15%;
+            height: 10%;
+        }
+        li {
+            font-size: 100%;
+            width: 16vh;
+            padding: 2%;
+        }
+        
+        ul ul li {
+            margin-top: 10%;
+            margin-left: -6%;
+        }
+        
+    }
+    .footer{
+        .pie{
+            font-size: 85%;
+            margin: 0.7%;
+        }
+    }
+}
+.grillaB{
+    grid-template-rows: 40vh 10vh 8vh 400vh 26vh;
+    .section1{
+        margin-left: 5%;
+        width: 65%;
+        height: 70%;
+        .logo1{
+            width: 120%;
+            height: 170%;
+        }
+    }  
+    .section2{
+        width: 85%;
+        height: 70%;
+        padding: 5% 5% 5% 10%;
+        .logo2{
+            width: 120%;
+            height: 150%;
+        }
+    }
+
+    .logoTitulo{
+        margin-top: 1%;
+        width: 40vh;
+        .piedras{
+            width: 70%;
+        }
+        .titulo{
+            margin-top: 5%;
+            margin-bottom: 10%;
+            width: 120%;
+        }
+    }
+    .nav{
+        grid-area: nav;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        .menu{
+            font-size: 100%;
+            width: 15%;
+            height: 10%;
+        }
+        li {
+            font-size: 100%;
+            width: 16vh;
+            padding: 2%;
+        }
+        
+        ul ul li {
+            margin-top: 10%;
+            margin-left: -6%;
+        }
+        
+    }
+    .footer{
+        .pie{
+            font-size: 85%;
+            margin: 0.7%;
+        }
+    }
+}
+.grillaP{
+    grid-template-rows: 40vh 10vh 8vh 470vh 26vh;
+    .section1{
+        margin-left: 5%;
+        width: 65%;
+        height: 70%;
+        .logo1{
+            width: 120%;
+            height: 170%;
+        }
+    }  
+    .section2{
+        width: 85%;
+        height: 70%;
+        padding: 5% 5% 5% 10%;
+        .logo2{
+            width: 120%;
+            height: 150%;
+        }
+    }
+
+    .logoTitulo{
+        margin-top: 1%;
+        width: 40vh;
+        .piedras{
+            width: 70%;
+        }
+        .titulo{
+            margin-top: 5%;
+            margin-bottom: 10%;
+            width: 120%;
+        }
+    }
+    .nav{
+        grid-area: nav;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        .menu{
+            font-size: 100%;
+            width: 15%;
+            height: 10%;
+        }
+        li {
+            font-size: 100%;
+            width: 16vh;
+            padding: 2%;
+        }
+        
+        ul ul li {
+            margin-top: 10%;
+            margin-left: -6%;
+        }
+        
+    }
+    .footer{
+        .pie{
+            font-size: 85%;
+            margin: 0.7%;
+        }
+    }
+}
+}
+/* Estilos desktop */
+@media(min-width: 1024px){
+.grilla{
+        -template-rows: 40vh 10vh 15vh 120vh 18vh 110vh 22vh;
+        .section1{
+            margin-left: 8%;
+            width: 65%;
+            height: 70%;
+        }       
+        .section2{
+            width: 85%;
+            height: 70%;
+            padding: 5% 5% 5% 10%;
+        }
+        .imagen2{
+            height: 35vw;
+            margin: 6%;
+            .pieFoto2{
+                font-size: 100%;
+            }
+        }
+        .imagenProducto{
+            .texto{
+                font-size: 115%;
+            }
+        }
+        .detalleProducto{
+            font-size: 105%;
+        }
+        .footer{
+            .pie{
+                font-size: 100%;
+                margin: 1%;
+            }
+        }
+    }
+}

@@ -1,0 +1,257 @@
+.grillaF{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1px 3fr 1px 3fr;
+    grid-template-rows: 22vh 8vh 6vh 56vh 17vh;
+    grid-template-areas:
+    "section1 logoTitulo logoTitulo logoTitulo section2"
+    "section1 logoTitulo logoTitulo logoTitulo section2"
+    "nav nav nav nav nav"
+    "contacto contacto contacto contacto contacto"
+    "footer footer footer footer footer"
+    ;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    .header{
+        .logoTitulo{
+            grid-area: logoTitulo;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            margin-top: 5%;
+            margin:auto;
+            width: 20vh;
+            .titulo{
+                margin-top: 10%;
+                margin-bottom: 5%;
+            }
+            .piedras{
+                width: 70%;
+            }
+        }
+    }
+    .section1{
+        grid-area: section1;
+        align-content: center;
+        justify-content: center;
+        padding: 5%;
+        margin-left: 5%;
+        transform: skewX(-10deg);
+        width: 35%;
+        height: 100%;
+    }
+    .section2{
+        grid-area: section2;
+        padding: 5% 5% 5% 30%;
+        width: 30%;
+        height: 100%;
+    }
+    .nav{
+        grid-area: nav;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-content: center;
+        .ulMenu{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            margin: 0%;
+            padding: 0%;
+        }
+        ul li:hover ul {
+            display:block; 
+        } 
+        li {
+            display: inline-block;
+            position:relative;
+            font-size: 80%;
+            background-color:$rosa;
+            margin: 2%;
+            padding: 1%;
+            text-align: center;
+            width: 14vh;
+        }
+        .menu{
+            text-decoration: none;
+            font-size: 80%;
+            font-family: $menu;
+            color: $violetaOscuro;
+            text-align: center;
+            width: 6%;
+            height: 2%;
+        }
+        ul ul {
+            position: absolute;
+            display: none;
+        }    
+        ul ul li {
+            display: block;
+            margin-top: 5%;
+            margin-left: -3%;
+        }
+        .submenu{
+            display: flex;
+            flex-direction: row;
+            text-decoration: none;
+            font-size: 90%;
+            font-family: $menu;
+            color: $violeta;   
+        }
+    }
+    .mainContacto{
+        grid-area: contacto;
+            .formularioContacto{
+                display: flex;
+                flex-direction: column;
+                margin: 15%;
+                align-items: center;
+                .parrafo{
+                    color: rgb(116, 194, 224);
+                    font-size: 80%;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    margin: 2%;
+                    text-align: center;
+                }
+                .formulario{
+                    padding: 2%;
+                    height: 20%; 
+                    font-size: 70%;
+                    color: rgb(126, 113, 212);
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    width: 100%;
+                    background-color: rgb(247, 226, 246);
+                    border-color: lightyellow;
+                    border-radius: 3%;
+                }
+                .formularioConsulta{
+                    padding: 2%;
+                    height: 40%; 
+                    font-size: 70%;
+                    color: slateblue;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    width: 100%;
+                    background-color: rgb(247, 226, 246);
+                    border-color: lightyellow;
+                    border-radius: 3%;
+                }
+                .formularioenviar{
+                    margin: 3%;
+                    font-size: 70%;
+                    padding: 1%;
+                    color: slateblue;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                }
+           
+       }
+    }
+    .footer{
+        grid-area: footer;
+        background-color: $rosaClaro;
+        display: flex;
+        flex-direction: column;
+        align-items: initial;
+        background-image: linear-gradient(50deg, $rosaClaro, #fcddf7);
+        .pie{
+            text-decoration: none;
+            color: $violeta;
+            font-size: 70%;
+            font-family: $menu;
+            margin: 2%;
+        }
+    }
+}
+
+   /* Estilos tablet */
+@media (min-width: 768px){
+    
+.grillaF{
+    grid-template-rows: 40vh 10vh 6vh 85vh 18vh;
+    .formularioConsulta{
+        width: 70%;
+    }
+    .formulario{
+        width: 70%;
+    
+    }
+    .section1{
+        margin-left: 5%;
+        width: 65%;
+        height: 70%;
+        .logo1{
+            width: 120%;
+            height: 170%;
+        }
+    }  
+    .section2{
+        width: 85%;
+        height: 70%;
+        padding: 5% 5% 5% 10%;
+        .logo2{
+            width: 120%;
+            height: 150%;
+        }
+    }
+
+    .logoTitulo{
+        margin-top: 1%;
+        width: 100%;
+        .piedras{
+            width: 100%;
+        }
+        .titulo{
+            margin-top: 5%;
+            margin-bottom: 10%;
+            width: 180%;
+        }
+    }
+    .nav{
+        grid-area: nav;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        .menu{
+            font-size: 100%;
+            width: 15%;
+            height: 10%;
+        }
+        li {
+            font-size: 100%;
+            width: 16vh;
+            padding: 2%;
+        }
+        
+        ul ul li {
+            margin-top: 10%;
+            margin-left: -6%;
+        }
+        
+    }
+    .footer{
+        .pie{
+            font-size: 85%;
+            margin: 0.7%;
+        }
+    }
+}
+
+}
+
+/* Estilos desktop */
+@media(min-width: 1024px){
+    .formularioenviar{
+        font-size: 80%;
+     
+    }
+    .formulario{
+       font-size: 80%;
+    }
+    .formularioConsulta{
+        font-size: 80%;
+    }
+    .parrafo{
+        font-size: 90%;
+     }
+}

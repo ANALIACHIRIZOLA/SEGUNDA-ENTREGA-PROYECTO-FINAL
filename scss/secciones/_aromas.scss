@@ -1,0 +1,239 @@
+.grillaA{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1px 3fr 1px 3fr;
+    grid-template-rows: 22vh 8vh 6vh 90vh 17vh;
+    grid-template-areas:
+    "section1 logoTitulo logoTitulo logoTitulo section2"
+    "section1 logoTitulo logoTitulo logoTitulo section2"
+    "nav nav nav nav nav"
+    "aromas aromas aromas aromas aromas"
+    "footer footer footer footer footer"
+    ;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    .header{
+        .logoTitulo{
+            grid-area: logoTitulo;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            margin-top: 5%;
+            margin:auto;
+            width: 20vh;
+            .titulo{
+                margin-top: 10%;
+                margin-bottom: 5%;
+            }
+            .piedras{
+                width: 70%;
+            }
+        }
+    }
+    .section1{
+        grid-area: section1;
+        align-content: center;
+        justify-content: center;
+        padding: 5%;
+        margin-left: 5%;
+        transform: skewX(-10deg);
+        width: 35%;
+        height: 100%;
+    }
+    .section2{
+        grid-area: section2;
+        padding: 5% 5% 5% 30%;
+        width: 30%;
+        height: 100%;
+    }
+    .nav{
+        grid-area: nav;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-content: center;
+        .ulMenu{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            margin: 0%;
+            padding: 0%;
+        }
+        ul li:hover ul {
+            display:block; 
+        } 
+        li {
+            display: inline-block;
+            position:relative;
+            font-size: 80%;
+            background-color:$rosa;
+            margin: 2%;
+            padding: 1%;
+            text-align: center;
+            width: 14vh;
+        }
+        .menu{
+            text-decoration: none;
+            font-size: 80%;
+            font-family: $menu;
+            color: $violetaOscuro;
+            text-align: center;
+            width: 6%;
+            height: 2%;
+        }
+        ul ul {
+            position: absolute;
+            display: none;
+        }    
+        ul ul li {
+            display: block;
+            margin-top: 5%;
+            margin-left: -3%;
+        }
+        .submenu{
+            display: flex;
+            flex-direction: row;
+            text-decoration: none;
+            font-size: 90%;
+            font-family: $menu;
+            color: $violeta;   
+        }
+    }
+    .parrafoAromas{
+        grid-area: aromas;
+        margin: 10%;
+        text-align: justify;
+        p{
+            color: $violetaOscuro;
+            font-size: 70%;
+            margin:0%
+        }
+        h1{
+            font-size: 55%;
+            margin-left: 0;
+            text-decoration: underline;
+            margin: 1%;
+            color: $violetaOscuro;
+            font-family: $pieFoto;
+        }
+        h2{
+            color: $violetaOscuro;
+            font-family: $menu;
+            font-size: 72%;
+            margin-bottom: 5%;
+        }
+    }
+    .footer{
+        grid-area: footer;
+        background-color: #f8d7f0;
+        display: flex;
+        flex-direction: column;
+        align-items: initial;
+        background-image: linear-gradient(50deg, #fff2fd, #fcddf7);
+        .pie{
+            text-decoration: none;
+            color: #a07baf;
+            font-size: 70%;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 2%;
+        }
+    }
+}
+
+   /* Estilos tablet */
+@media (min-width: 768px){
+    
+.grillaA{
+    grid-template-rows: 40vh 10vh 4vh 140vh 17vh;
+    .parrafoAromas{
+        h2{
+            font-size: 90%;
+            margin-top: 10%;
+            font-style: normal;
+        }
+        h1{
+            font-size: 80%;
+            margin-left: 0;
+        }
+        p{
+            font-size: 100%;
+        }
+    }
+    .section1{
+        margin-left: 5%;
+        width: 65%;
+        height: 70%;
+        .logo1{
+            width: 120%;
+            height: 170%;
+        }
+    }  
+    .section2{
+        width: 85%;
+        height: 70%;
+        padding: 5% 5% 5% 10%;
+        .logo2{
+            width: 120%;
+            height: 150%;
+        }
+    }
+
+    .logoTitulo{
+        margin-top: 1%;
+        width: 40vh;
+        .piedras{
+            width: 70%;
+        }
+        .titulo{
+            margin-top: 5%;
+            margin-bottom: 10%;
+            width: 120%;
+        }
+    }
+    .nav{
+        grid-area: nav;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        .menu{
+            font-size: 100%;
+            width: 15%;
+            height: 10%;
+        }
+        li {
+            font-size: 100%;
+            width: 16vh;
+            padding: 2%;
+        }
+        
+        ul ul li {
+            margin-top: 10%;
+            margin-left: -6%;
+        }
+        
+    }
+    .footer{
+        .pie{
+            font-size: 85%;
+            margin: 0.7%;
+        }
+    }
+}
+}
+
+
+/* Estilos desktop */
+@media(min-width: 1024px){
+    .grillaA{
+        grid-template-rows: 40vh 10vh 4vh 110vh 17vh;
+        h2{
+            font-size: 110%;
+        }
+        
+        h1{
+            font-size: 100%;
+        }
+}
+}
