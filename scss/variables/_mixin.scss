@@ -1,0 +1,7 @@
+ @mixin fontStyle ($color, $tamanio){
+     color: $color;
+     text-align: center;
+     font-style: italic;
+     font-family: $subtitulo;
+     font-size: $tamanio;
+ }

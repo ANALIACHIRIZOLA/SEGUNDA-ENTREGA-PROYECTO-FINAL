@@ -2,7 +2,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: 3fr 1px 3fr 1px 3fr;
-    grid-template-rows: 22vh 8vh 6vh 90vh 17vh;
+    grid-template-rows: 22vh 8vh 6vh 100vh 17vh;
     grid-template-areas:
     "section1 logoTitulo logoTitulo logoTitulo section2"
     "section1 logoTitulo logoTitulo logoTitulo section2"
@@ -105,7 +105,7 @@
         margin: 10%;
         text-align: justify;
         p{
-            color: $violetaOscuro;
+            @extend %estilosTexto;
             font-size: 70%;
             margin:0%
         }

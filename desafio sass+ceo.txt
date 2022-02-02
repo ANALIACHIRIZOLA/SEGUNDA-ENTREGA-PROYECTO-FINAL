@@ -1,0 +1,11 @@
+•Agregado Extend para formato texto en: 
+-pie de Foto en Index
+-descripción del producto en hojas: “sahumerios”, “bombitas” y “perlas”
+-texto descriptivo en hoja “aromas”
+•Agregado Mixin en subtitulo del Index y en Titulo bajo la Foto de “sahumerios”, “bombitas” y “perlas”
+•Agregado Mapa en descripción producto en “sahumerios”
+•Se bajo la calidad de todas las fotos
+•Agregado iconos redes sociales en footer
+•Agregado palabras clave en head
+•Agregado descripción en index
+•Agregado texto alternativo para fotos

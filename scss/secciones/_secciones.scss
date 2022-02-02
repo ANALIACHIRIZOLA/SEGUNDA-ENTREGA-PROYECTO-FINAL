@@ -10,8 +10,8 @@
     grid-template-columns: 3fr 1px 3fr 1px 3fr;
     grid-template-rows: 20vh 6vh 4vh 56vh 8vh 58vh 20vh;
     grid-template-areas:
-    "section1 logoTitulo logoTitulo logoTitulo section2"
-    "section1 logoTitulo logoTitulo logoTitulo section2"
+    "section1 . logoTitulo . section2"
+    "section1 . logoTitulo . section2"
     "nav nav nav nav nav"
     "imagenes imagenes imagenes imagenes imagenes"
     "subtitulo subtitulo subtitulo subtitulo subtitulo"
@@ -27,12 +27,9 @@
             flex-direction: column;
             justify-items: center;
             align-items: center;
-            margin-top: 5%;
-            margin:auto;
             width: 20vh;
             .titulo{
-                margin-top: 10%;
-                margin-bottom: 5%;
+                margin:0%;
             }
             .piedras{
                 width: 70%;
@@ -133,18 +130,14 @@
         }
     }
     .subtitulo{
+        @include fontStyle ($violeta, 16px);
         grid-area: subtitulo;
         background-color: $turquesa;
         margin:  2%;
-        font-size: 90%;
-        font-family: $subtitulo;
-        text-align: center;
         padding: 2%;
         height: 70%;
-        color: $violetaOscuro;
         .psubtitulo{
             color: $violeta;
-            font-size: 90%;
             margin:0%
         }
     }
@@ -159,10 +152,8 @@
             margin: 2%;
             width: 16vh;
             .pieFoto2{
-                color: $violetaOscuro;
+                @extend %estilosTexto;
                 font-size: 55%;
-                font-family: $pieFoto;
-                text-align: center;
                 text-decoration: none;
                 height: 16vw;
             }
@@ -179,10 +170,8 @@
             margin: 2%;
             width: 16vh;
             .pieFoto2{
-                color: $violetaOscuro;
+                @extend %estilosTexto;
                 font-size: 55%;
-                font-family: $pieFoto;
-                text-align: center;
                 text-decoration: none;
                 height: 16vw;
             }
@@ -199,10 +188,8 @@
             margin: 2%;
             width: 16vh;
             .pieFoto2{
-                color: $violetaOscuro;
+                @extend %estilosTexto;
                 font-size: 55%;
-                font-family: $pieFoto;
-                text-align: center;
                 text-decoration: none;
                 height: 16vw;
             }
@@ -221,6 +208,12 @@
             font-size: 70%;
             font-family: $menu;
             margin: 2%;
+        }
+        .fab {
+            color: $violetaOscuro;
+            margin: 2px;
+            font-size: 120%;
+
         }
     
     }
@@ -341,6 +334,12 @@
             font-family: $menu;
             margin: 2%;
         }
+        .fab {
+            color: $violetaOscuro;
+            margin: 2px;
+            font-size: 120%;
+
+        }
     }
     .sectionS{
         grid-area: sectionS;
@@ -360,9 +359,7 @@
                 .texto{
                     margin: 5%;
                     margin-left: 0%;
-                    font-size: 60%;
-                    text-align: center;
-                    font-style: italic;
+                    @include fontStyle ($violetaOscuro, 12px);
                 }
                 .imagenP{
                     border-radius: 5%;
@@ -370,11 +367,15 @@
     
             }
             .detalleProducto{
+                @extend %estilosTexto;
+                @each $nombre, $color in $formatoResaltado {
+                    .#{$nombre}{
+                        color: $color
+                    }
+                };
                 width: 110%;
                 font-size: 65%;
-                font-family: Arial, Helvetica, sans-serif;
                 height: 260px;
-                text-align: center;
                 padding: 2%;  
             }
         }
@@ -501,9 +502,7 @@
                 .texto{
                     margin: 5%;
                     margin-left: 0%;
-                    font-size: 60%;
-                    text-align: center;
-                    font-style: italic;
+                    @include fontStyle ($violetaOscuro, 12px);
                 }
                 .imagenP{
                     border-radius: 5%;
@@ -513,9 +512,8 @@
             .detalleProducto{
                 width: 110%;
                 font-size: 65%;
-                font-family: $pieFoto;
+                @extend %estilosTexto;
                 height: 200px;
-                text-align: center;
                 padding: 2%;  
             }
         }
@@ -534,6 +532,12 @@
             font-size: 70%;
             font-family: $menu;
             margin: 2%;
+        }
+        .fab {
+            color: $violetaOscuro;
+            margin: 2px;
+            font-size: 120%;
+
         }
     }
 }
@@ -657,9 +661,7 @@
                 .texto{
                     margin: 5%;
                     margin-left: 0%;
-                    font-size: 60%;
-                    text-align: center;
-                    font-style: italic;
+                    @include fontStyle ($violetaOscuro, 12px);
                 }
                 .imagenP{
                     border-radius: 5%;
@@ -669,9 +671,8 @@
             .detalleProducto{
                 width: 110%;
                 font-size: 65%;
-                font-family: $pieFoto;
+                @extend %estilosTexto;
                 height: 200px;
-                text-align: center;
                 padding: 2%;  
             }
         }
@@ -691,6 +692,12 @@
             font-family: $menu;
             margin: 2%;
         }
+        .fab {
+            color: $violetaOscuro;
+            margin: 2px;
+            font-size: 120%;
+
+        }
     }
 }
 
@@ -699,7 +706,7 @@
 
 .grilla{
     grid-template-columns: 3fr 1px 3fr 1px 3fr;
-    grid-template-rows: 40vh 10vh 15vh 120vh 18vh 10vh 22vh;
+    grid-template-rows: 40vh 10vh 15vh 120vh 16vh 100vh 22vh;
     .section1{
         margin-left: 5%;
         width: 65%;
@@ -719,18 +726,7 @@
         }
     }
 
-    .logoTitulo{
-        margin-top: 1%;
-        width: 40vh;
-        .piedras{
-            width: 70%;
-        }
-        .titulo{
-            margin-top: 5%;
-            margin-bottom: 10%;
-            width: 120%;
-        }
-    }
+
     .nav{
         grid-area: nav;
         display: flex;
@@ -759,8 +755,8 @@
     }
     .imagen2{
         background-color: rgb(253, 223, 238);
-        width: 90%;
-        height: 40vw;
+        width: 110%;
+        height: 35vw;
         margin: 8%;
         .pieFoto2{
             font-size: 80%;
@@ -837,13 +833,22 @@
         }
         
     }
+    .sectionS{
+        .imagenes2{
+            .detalleProducto{
+                font-size: 85%;
+            }
+        }
+    
+    }
+}
     .footer{
         .pie{
             font-size: 85%;
             margin: 0.7%;
         }
     }
-}
+
 .grillaB{
     grid-template-rows: 40vh 10vh 8vh 400vh 26vh;
     .section1{
@@ -899,6 +904,14 @@
             margin-left: -6%;
         }
         
+    }
+    .sectionS{
+        .imagenes2{
+            .detalleProducto{
+                font-size: 85%;
+            }
+        }
+    
     }
     .footer{
         .pie{
@@ -962,6 +975,14 @@
             margin-left: -6%;
         }
         
+    }
+    .sectionS{
+        .imagenes2{
+            .detalleProducto{
+                font-size: 85%;
+            }
+        }
+    
     }
     .footer{
         .pie{

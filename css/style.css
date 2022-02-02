@@ -1,3 +1,8 @@
+.grilla .section3 .imagen2 .pieFoto2, .grilla .section4 .imagen2 .pieFoto2, .grilla .section5 .imagen2 .pieFoto2, .grillaS .sectionS .imagenes2 .detalleProducto, .grillaB .sectionS .imagenes2 .detalleProducto, .grillaP .sectionS .imagenes2 .detalleProducto, .grillaA .parrafoAromas p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: purple;
+  text-align: center; }
+
 * {
   margin: 0%;
   padding: 0%;
@@ -8,7 +13,7 @@
   display: grid;
   grid-template-columns: 3fr 1px 3fr 1px 3fr;
   grid-template-rows: 20vh 6vh 4vh 56vh 8vh 58vh 20vh;
-  grid-template-areas: "section1 logoTitulo logoTitulo logoTitulo section2" "section1 logoTitulo logoTitulo logoTitulo section2" "nav nav nav nav nav" "imagenes imagenes imagenes imagenes imagenes" "subtitulo subtitulo subtitulo subtitulo subtitulo" "section3 . section4 . section5" "footer footer footer footer footer";
+  grid-template-areas: "section1 . logoTitulo . section2" "section1 . logoTitulo . section2" "nav nav nav nav nav" "imagenes imagenes imagenes imagenes imagenes" "subtitulo subtitulo subtitulo subtitulo subtitulo" "section3 . section4 . section5" "footer footer footer footer footer";
   grid-column-gap: 0;
   grid-row-gap: 0; }
   .grilla .header .logoTitulo {
@@ -17,12 +22,9 @@
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    margin-top: 5%;
-    margin: auto;
     width: 20vh; }
     .grilla .header .logoTitulo .titulo {
-      margin-top: 10%;
-      margin-bottom: 5%; }
+      margin: 0%; }
     .grilla .header .logoTitulo .piedras {
       width: 70%; }
   .grilla .section1 {
@@ -104,18 +106,18 @@
           font-size: 80%;
           color: #8112ad; }
   .grilla .subtitulo {
+    color: #8112ad;
+    text-align: center;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
     grid-area: subtitulo;
     background-color: #61d4e4;
     margin: 2%;
-    font-size: 90%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
     padding: 2%;
-    height: 70%;
-    color: purple; }
+    height: 70%; }
     .grilla .subtitulo .psubtitulo {
       color: #8112ad;
-      font-size: 90%;
       margin: 0%; }
   .grilla .section3 {
     grid-area: section3;
@@ -128,10 +130,7 @@
       margin: 2%;
       width: 16vh; }
       .grilla .section3 .imagen2 .pieFoto2 {
-        color: purple;
         font-size: 55%;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-        text-align: center;
         text-decoration: none;
         height: 16vw; }
   .grilla .section4 {
@@ -145,10 +144,7 @@
       margin: 2%;
       width: 16vh; }
       .grilla .section4 .imagen2 .pieFoto2 {
-        color: purple;
         font-size: 55%;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-        text-align: center;
         text-decoration: none;
         height: 16vw; }
   .grilla .section5 {
@@ -162,10 +158,7 @@
       margin: 2%;
       width: 16vh; }
       .grilla .section5 .imagen2 .pieFoto2 {
-        color: purple;
         font-size: 55%;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-        text-align: center;
         text-decoration: none;
         height: 16vw; }
   .grilla .footer {
@@ -181,6 +174,10 @@
       font-size: 70%;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
       margin: 2%; }
+    .grilla .footer .fab {
+      color: purple;
+      margin: 2px;
+      font-size: 120%; }
 
 .grillaS {
   width: 100%;
@@ -276,6 +273,10 @@
       font-size: 70%;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
       margin: 2%; }
+    .grillaS .footer .fab {
+      color: purple;
+      margin: 2px;
+      font-size: 120%; }
   .grillaS .sectionS {
     grid-area: sectionS;
     display: flex;
@@ -294,18 +295,24 @@
         .grillaS .sectionS .imagenes2 .imagenProducto .texto {
           margin: 5%;
           margin-left: 0%;
-          font-size: 60%;
+          color: purple;
           text-align: center;
-          font-style: italic; }
+          font-style: italic;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-size: 12px; }
         .grillaS .sectionS .imagenes2 .imagenProducto .imagenP {
           border-radius: 5%; }
       .grillaS .sectionS .imagenes2 .detalleProducto {
         width: 110%;
         font-size: 65%;
-        font-family: Arial, Helvetica, sans-serif;
         height: 260px;
-        text-align: center;
         padding: 2%; }
+        .grillaS .sectionS .imagenes2 .detalleProducto .aroma {
+          color: #0c7588; }
+        .grillaS .sectionS .imagenes2 .detalleProducto .funcion {
+          color: #974754; }
+        .grillaS .sectionS .imagenes2 .detalleProducto .calidad {
+          color: #631e63; }
 
 .grillaB {
   width: 100%;
@@ -406,17 +413,17 @@
         .grillaB .sectionS .imagenes2 .imagenProducto .texto {
           margin: 5%;
           margin-left: 0%;
-          font-size: 60%;
+          color: purple;
           text-align: center;
-          font-style: italic; }
+          font-style: italic;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-size: 12px; }
         .grillaB .sectionS .imagenes2 .imagenProducto .imagenP {
           border-radius: 5%; }
       .grillaB .sectionS .imagenes2 .detalleProducto {
         width: 110%;
         font-size: 65%;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
         height: 200px;
-        text-align: center;
         padding: 2%; }
   .grillaB .footer {
     grid-area: footer;
@@ -431,6 +438,10 @@
       font-size: 70%;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
       margin: 2%; }
+    .grillaB .footer .fab {
+      color: purple;
+      margin: 2px;
+      font-size: 120%; }
 
 .grillaP {
   width: 100%;
@@ -531,17 +542,17 @@
         .grillaP .sectionS .imagenes2 .imagenProducto .texto {
           margin: 5%;
           margin-left: 0%;
-          font-size: 60%;
+          color: purple;
           text-align: center;
-          font-style: italic; }
+          font-style: italic;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-size: 12px; }
         .grillaP .sectionS .imagenes2 .imagenProducto .imagenP {
           border-radius: 5%; }
       .grillaP .sectionS .imagenes2 .detalleProducto {
         width: 110%;
         font-size: 65%;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
         height: 200px;
-        text-align: center;
         padding: 2%; }
   .grillaP .footer {
     grid-area: footer;
@@ -556,12 +567,16 @@
       font-size: 70%;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
       margin: 2%; }
+    .grillaP .footer .fab {
+      color: purple;
+      margin: 2px;
+      font-size: 120%; }
 
 /* Estilos tablet */
 @media (min-width: 768px) {
   .grilla {
     grid-template-columns: 3fr 1px 3fr 1px 3fr;
-    grid-template-rows: 40vh 10vh 15vh 120vh 18vh 10vh 22vh; }
+    grid-template-rows: 40vh 10vh 15vh 120vh 16vh 100vh 22vh; }
     .grilla .section1 {
       margin-left: 5%;
       width: 65%;
@@ -576,15 +591,6 @@
       .grilla .section2 .logo2 {
         width: 120%;
         height: 150%; }
-    .grilla .logoTitulo {
-      margin-top: 1%;
-      width: 40vh; }
-      .grilla .logoTitulo .piedras {
-        width: 70%; }
-      .grilla .logoTitulo .titulo {
-        margin-top: 5%;
-        margin-bottom: 10%;
-        width: 120%; }
     .grilla .nav {
       grid-area: nav;
       display: flex;
@@ -606,8 +612,8 @@
       font-size: 100%; }
     .grilla .imagen2 {
       background-color: #fddfee;
-      width: 90%;
-      height: 40vw;
+      width: 110%;
+      height: 35vw;
       margin: 8%; }
       .grilla .imagen2 .pieFoto2 {
         font-size: 80%;
@@ -662,9 +668,11 @@
       .grillaS .nav ul ul li {
         margin-top: 10%;
         margin-left: -6%; }
-    .grillaS .footer .pie {
-      font-size: 85%;
-      margin: 0.7%; }
+    .grillaS .sectionS .imagenes2 .detalleProducto {
+      font-size: 85%; }
+  .footer .pie {
+    font-size: 85%;
+    margin: 0.7%; }
   .grillaB {
     grid-template-rows: 40vh 10vh 8vh 400vh 26vh; }
     .grillaB .section1 {
@@ -707,6 +715,8 @@
       .grillaB .nav ul ul li {
         margin-top: 10%;
         margin-left: -6%; }
+    .grillaB .sectionS .imagenes2 .detalleProducto {
+      font-size: 85%; }
     .grillaB .footer .pie {
       font-size: 85%;
       margin: 0.7%; }
@@ -752,6 +762,8 @@
       .grillaP .nav ul ul li {
         margin-top: 10%;
         margin-left: -6%; }
+    .grillaP .sectionS .imagenes2 .detalleProducto {
+      font-size: 85%; }
     .grillaP .footer .pie {
       font-size: 85%;
       margin: 0.7%; } }
@@ -982,7 +994,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: 3fr 1px 3fr 1px 3fr;
-  grid-template-rows: 22vh 8vh 6vh 90vh 17vh;
+  grid-template-rows: 22vh 8vh 6vh 100vh 17vh;
   grid-template-areas: "section1 logoTitulo logoTitulo logoTitulo section2" "section1 logoTitulo logoTitulo logoTitulo section2" "nav nav nav nav nav" "aromas aromas aromas aromas aromas" "footer footer footer footer footer";
   grid-column-gap: 0;
   grid-row-gap: 0; }
@@ -1064,7 +1076,6 @@
     margin: 10%;
     text-align: justify; }
     .grillaA .parrafoAromas p {
-      color: purple;
       font-size: 70%;
       margin: 0%; }
     .grillaA .parrafoAromas h1 {
